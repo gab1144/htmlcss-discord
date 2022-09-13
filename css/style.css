@@ -378,11 +378,6 @@ button.registrazione {
   background-position: centre centre;
 }
 
-path {
-  fill: white;
-}
-.onda-w{
-  background-color: whitesmoke;
-  display: flex;
-  align-items: flex-end;
+.ribaltata{
+  transform: rotate(180deg);
 }
