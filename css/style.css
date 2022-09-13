@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/*font body*/
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -41,19 +42,23 @@ header .menu a{
   text-decoration: none;
 }
 
+/*link menu header al passaggio del puntatore*/
 header .menu a:hover{
   text-decoration: underline;
 }
 
+/*link al passaggio del puntatore*/
 a:hover {
   text-decoration: underline;
 }
 
+/*formattazione generale bottoni*/
 button {
   padding: 10px 15px 10px 15px;
   border-radius: 20px;
 }
 
+/*formattazione bottone header*/
 header button {
   background-color: white;
   border: 1px solid white;
@@ -112,6 +117,7 @@ header .container{
 
 }
 
+/*formattazione titoli sezioni*/
 .contents h2, .download h2 {
   margin-bottom: 40px;
   font-size: 40px;
@@ -161,12 +167,14 @@ header .container{
   align-items: center;
 }
 
+/*formattazione titolo jumbotron*/
 .jumbotron h1 {
   font-size: 40px;
   margin-bottom: 25px;
   font-weight: 900;
 }
 
+/*formattazione paragrafo jumbotron*/
 .jumbotron p {
   line-height: 30px;
   font-weight: 400;
@@ -174,6 +182,7 @@ header .container{
   margin-bottom: 50px;
 }
 
+/*formattazione generale bottoni jumbotron*/
 .jumbotron button {
   font-size: 15px;
   padding: 15px 25px;
@@ -183,18 +192,21 @@ header .container{
   margin-bottom: 150px;
 }
 
+/*formattazione bottone di download jumbotron*/
 .button-download {
   color: rgb(42,39,124);
   background-color: white;
   border: 1px solid white;
 }
 
+/*formattazione bottone apertura browser jumbotron*/
 .button-browser {
   color: white;
   background-color: rgb(35,39,42);
   border: 1px solid rgb(35,39,42);
 }
 
+/*simbolo prima del contenuto del bottone*/
 button.button-download span::before{
  content: '\1F817';
  margin-right: 5px;
@@ -230,15 +242,18 @@ button.button-download span::before{
   margin-bottom: 20px;
 }
 
+/*formattazione paragrafo sezione download*/
 .download p {
   padding: 0 75px;
 }
 
+/*formattazione secondo titolo sezione download*/
 .download h3 {
   margin: 30px auto;
   font-size: 25px;
 }
 
+/*sfondo secondo titolo sezione download*/
 .stars {
   margin-top: 25px;
   background-image: url(../img/stars.svg);
@@ -250,9 +265,14 @@ button.button-download span::before{
   padding-top: 0.05px;
 }
 
+/*formattazione bottone sezione download*/
 .download button {
   background-color: rgb(88,101,242);
   color: white;
+}
+
+footer .container {
+  padding-bottom: 70px;
 }
 
 /*dimensione e flex area sopra e sotto riga footer*/
@@ -264,7 +284,6 @@ button.button-download span::before{
 /*dimensione e flex area sopra riga footer*/
 .top-footer {
   align-items:flex-start;
-  padding-top: 80px;
   justify-content: space-between;
   margin-bottom: 30px;
 }
@@ -274,7 +293,6 @@ button.button-download span::before{
   justify-content: space-between;
   align-items: flex-end;
   height: 70px;
-  margin-bottom: 70px;
 }
 
 /*formattazione container footer*/
@@ -283,7 +301,8 @@ footer .container{
   flex-direction: column;
   justify-content: flex-start;
 }
-  
+
+/*flex menu*/
 footer .menu {
   display: flex;
   flex-flow: column wrap;
@@ -320,56 +339,68 @@ footer .indirizzi .loghi-indirizzi{
 
 /*dimensione loghi con indirizzo*/
 footer .indirizzi .logo-link{
-  width: 500px;
+  width: 30px;
   height: 30px;
+  margin-right: 20px;
 }
 
+/*formattazione scritta sopra loghi con link footer*/
 footer h4 {
   font-size: 25px;
   font-weight: 800;
   margin-bottom: 25px;
 }
 
+/*formattazione titoli menu*/
 footer .area-menu span {
   margin-bottom: 20px;
 }
 
+/*formattazione punti lista*/
 footer .menu li {
   margin-bottom: 15px;
 }
 
+/*dimensione e margini bandiera footer*/
 .bandiera {
   width: 30px;
   height: 15px;
   margin-right: 5px;
 }
 
+/*margini e flex elementi riga bandiera*/
 .op-lingua {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
 }
 
+/*formattazione testo lingua footer*/
 .lingua{
   color: white;
 }
 
+/*formattazione loghi brand con link*/
 .brand {
   color: white;
+  font-size: 25px;
 }
 
+/*formattazione bottone registrazione footer*/
 button.registrazione {
   background-color: rgb(88,101,242);
   border: 1px solid rgb(88,101,242);
   color: white;
 }
 
+/*formattazione chevron*/
 .fa-chevron-down {
   font-size: 10px;
   color: white;
   margin-left: 5px;
 }
 
+/*onda per bordo container*/
 .onda {
   display: block;
   height: 200px;
@@ -378,6 +409,7 @@ button.registrazione {
   background-position: centre centre;
 }
 
+/*onda ribaltata*/
 .ribaltata{
   transform: rotate(180deg);
 }
