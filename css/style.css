@@ -21,7 +21,6 @@ header {
 /*sfondo e dimensione footer*/
 footer {
   background-color: rgb(35,39,42);
-  height: 500px;
   color: rgb(88,101,242);
 }
 
@@ -40,6 +39,14 @@ header  .menu ul li{
 header .menu a{
   color: white;
   text-decoration: none;
+}
+
+nav.menu ul li a:hover{
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 button {
@@ -165,7 +172,7 @@ header .container{
   margin-bottom: 50px;
 }
 
-button {
+.jumbotron button {
   font-size: 15px;
   padding: 15px 25px;
   border-radius: 40px;
@@ -264,26 +271,32 @@ button.button-download span::before{
 .top-footer, .bottom-footer{
   width:100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 /*dimensione e flex area sopra riga footer*/
 .top-footer {
-  margin-bottom: 45px;
-  height: 240px;
-  align-content:flex-start;
+  align-items:flex-start;
   padding-top: 80px;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 /*formattazione area sotto riga footer*/
 .bottom-footer{
-  margin-top: 35px;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 70px;
+  margin-bottom: 70px;
 }
 
 /*formattazione container footer*/
-footer .container, .menu {
+footer .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+  
+footer .menu {
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
@@ -308,7 +321,6 @@ footer .indirizzi {
   width: 20%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 }
 
 /*dimensiona e flex area loghi con indirizzo*/
@@ -320,6 +332,44 @@ footer .indirizzi .loghi-indirizzi{
 
 /*dimensione loghi con indirizzo*/
 footer .indirizzi .logo-link{
-  width: 30px;
+  width: 500px;
   height: 30px;
+}
+
+footer h4 {
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+footer .area-menu span {
+  margin-bottom: 20px;
+}
+
+footer .menu li {
+  margin-bottom: 15px;
+}
+
+.bandiera {
+  width: 30px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.op-lingua {
+  margin-bottom: 20px;
+}
+
+.lingua{
+  color: white;
+}
+
+.brand {
+  color: white;
+}
+
+button.registrazione {
+  background-color: rgb(88,101,242);
+  border: 1px solid rgb(88,101,242);
+  color: white;
 }
