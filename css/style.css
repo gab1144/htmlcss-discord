@@ -122,11 +122,12 @@ header .container{
 /*dimensione e flex container*/
 .container {
   width: 1150px;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: auto auto;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 /*dimensioni e flex container jumbotron*/
@@ -136,6 +137,7 @@ header .container{
   flex-direction: column;
   justify-content: center;
   padding: 0 200px;
+  margin-top: 0;
 }
 
 /*formattazione area di testo jumbotron*/
@@ -203,7 +205,6 @@ button.button-download span::before{
 /*sfondo e dimensone sezione server,visibilità e community*/
 .info-server, .info-visibilita, .info-community{
   background-color: white;
-  height: 600px;
 }
 
 /*sfondo sezione visibilità*/
@@ -214,9 +215,6 @@ button.button-download span::before{
 /*dimensione sezione download*/
 .download {
   background-color: rgb(246,246,246);
-  height: 1100px;
-  padding-top: 125px;
-  padding-bottom: 120px;
 }
 
 /*flex container download*/
@@ -227,17 +225,8 @@ button.button-download span::before{
   text-align: center;
 }
 
-/*dimensione immagine download*/
-.download .immagine {
-  width: 100%;
-  margin: auto;
-  height: 800px;
-  margin-bottom: 50px;
-}
-
 /*margini area testo senzione download*/
 .download-contents{
-  margin-top: 100px;
   margin-bottom: 20px;
 }
 
@@ -262,7 +251,6 @@ button.button-download span::before{
 }
 
 .download button {
-  margin-bottom: 100px;
   background-color: rgb(88,101,242);
   color: white;
 }
@@ -380,4 +368,21 @@ button.registrazione {
   font-size: 10px;
   color: white;
   margin-left: 5px;
+}
+
+.onda {
+  display: block;
+  height: 200px;
+  background-image: url(../img/wave.svg);
+  background-size: cover;
+  background-position: centre centre;
+}
+
+path {
+  fill: white;
+}
+.onda-w{
+  background-color: whitesmoke;
+  display: flex;
+  align-items: flex-end;
 }
