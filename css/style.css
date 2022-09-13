@@ -91,7 +91,6 @@ header .container{
 .immagine {
   width: 678px;
   height: 440px;
-  background-color: yellow; /*da rimuove*/
 }
 
 /*dimensione area di testo*/
@@ -101,8 +100,16 @@ header .container{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
+  line-height: 30px;
+  padding: 0 60px;
 
+}
+
+.contents h2, .download h2 {
+  margin-bottom: 40px;
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 800;
 }
 
 /*dimensione e flex container*/
@@ -146,7 +153,7 @@ header .container{
 }
 
 .jumbotron h1 {
-  font-size: 50px;
+  font-size: 40px;
   margin-bottom: 25px;
   font-weight: 900;
 }
@@ -158,7 +165,7 @@ header .container{
   margin-bottom: 50px;
 }
 
-.jumbotron button {
+button {
   font-size: 15px;
   padding: 15px 25px;
   border-radius: 40px;
@@ -167,7 +174,7 @@ header .container{
   margin-bottom: 150px;
 }
 
-.button-windows {
+.button-download {
   color: rgb(42,39,124);
   background-color: white;
   border: 1px solid white;
@@ -179,7 +186,7 @@ header .container{
   border: 1px solid rgb(35,39,42);
 }
 
-button.button-windows span::before{
+button.button-download span::before{
  content: '\1F817';
  margin-right: 5px;
  font-weight: 800;
@@ -200,7 +207,7 @@ button.button-windows span::before{
 /*dimensione sezione download*/
 .download {
   background-color: rgb(246,246,246);
-  height: 1300px;
+  height: 1100px;
   padding-top: 125px;
   padding-bottom: 120px;
 }
@@ -209,7 +216,7 @@ button.button-windows span::before{
 .download .container {
   display: flex;
   flex-direction: column;
-  justify-content:space-between;
+  justify-content:space-around;
   text-align: center;
 }
 
@@ -223,7 +230,34 @@ button.button-windows span::before{
 
 /*margini area testo senzione download*/
 .download-contents{
-  margin-bottom: 50px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.download p {
+  padding: 0 75px;
+}
+
+.download h3 {
+  margin: 30px auto;
+  font-size: 25px;
+}
+
+.stars {
+  margin-top: 25px;
+  background-image: url(../img/stars.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 0.5px;
+  padding-top: 0.05px;
+}
+
+.download button {
+  margin-bottom: 100px;
+  background-color: rgb(88,101,242);
+  color: white;
 }
 
 /*dimensione e flex area sopra e sotto riga footer*/
