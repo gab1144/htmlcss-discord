@@ -80,8 +80,11 @@ header .container{
 
 /*dimensione jumbotron*/
 .jumbotron {
-  background-color: rgba(64, 78, 237, 0.356); /*da rimuove*/
-  height: 600px;
+  background-image: url(../img/jumbo.png);
+  height: 550px;
+  background-position: center;
+  background-size:cover;
+  color: white;
 }
 
 /*dimensione immagini*/
@@ -95,7 +98,6 @@ header .container{
 .contents {
   height: 460px;
   width: 460px;
-  background-color: orange; /*da rimuove*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -115,7 +117,6 @@ header .container{
 
 /*dimensioni e flex container jumbotron*/
 .jumbotron .container {
-  background-color: gold; /*da rimuove*/
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -127,7 +128,6 @@ header .container{
 .jumbotron .contents {
   width: 100%;
   height: 50%;
-  background-color: red; /*da rimuove*/
   vertical-align: middle;
   display: flex;
   flex-direction: column;
@@ -138,14 +138,55 @@ header .container{
 /*formattazione area bottoni jumbotron*/
 .jumbotron .bottoni {
   height: calc(100%/6);
-  width: 100%;
-  background-color: blueviolet; /*da rimuove*/
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-/*sfondo e dimensione sezione server,visibilità e community*/
+.jumbotron h1 {
+  font-size: 50px;
+  margin-bottom: 25px;
+  font-weight: 900;
+}
+
+.jumbotron p {
+  line-height: 30px;
+  font-weight: 400;
+  font-size: 19px;
+  margin-bottom: 50px;
+}
+
+.jumbotron button {
+  font-size: 15px;
+  padding: 15px 25px;
+  border-radius: 40px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  margin-bottom: 150px;
+}
+
+.button-windows {
+  color: rgb(42,39,124);
+  background-color: white;
+  border: 1px solid white;
+}
+
+.button-browser {
+  color: white;
+  background-color: rgb(35,39,42);
+  border: 1px solid rgb(35,39,42);
+}
+
+button.button-windows span::before{
+ content: '\1F817';
+ margin-right: 5px;
+ font-weight: 800;
+ font-size: 15px;
+}
+
+/*sfondo e dimensone sezione server,visibilità e community*/
 .info-server, .info-visibilita, .info-community{
   background-color: white;
   height: 600px;
