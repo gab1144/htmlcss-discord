@@ -41,7 +41,7 @@ header .menu a{
   text-decoration: none;
 }
 
-nav.menu ul li a:hover{
+header .menu a:hover{
   text-decoration: underline;
 }
 
@@ -358,6 +358,8 @@ footer .menu li {
 
 .op-lingua {
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .lingua{
@@ -372,4 +374,10 @@ button.registrazione {
   background-color: rgb(88,101,242);
   border: 1px solid rgb(88,101,242);
   color: white;
+}
+
+.fa-chevron-down {
+  font-size: 10px;
+  color: white;
+  margin-left: 5px;
 }
